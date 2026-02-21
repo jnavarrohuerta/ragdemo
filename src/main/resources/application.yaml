@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: ragdemo
+
+logging:
+  level:
+    root: INFO
+    com.bcp.pships.ragdemo: DEBUG
+  pattern:
+    console: "%d{yyyy-MM-dd HH:mm:ss} %-5level %logger{36} - %msg%n"
+
+openai:
+  api-key: ${OPENAI_KEY}
+
+pinecone:
+  api-key: ${PINECONE_KEY}
+  environment: us-east-1
+  index-name: docs-index
